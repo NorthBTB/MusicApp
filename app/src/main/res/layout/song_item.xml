@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_margin="8dp"
+    android:background="@color/white"
+    android:id="@+id/ll_item_song">
+
+    <ImageView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintDimensionRatio="H,1:1"
+        android:layout_weight="1"
+        android:id="@+id/iv_play_button"
+        android:src="@drawable/ic_baseline_play_arrow_24"
+        android:scaleType="fitCenter"/>
+
+    <LinearLayout
+        app:layout_constraintLeft_toRightOf="@id/iv_play_button"
+        app:layout_constraintTop_toTopOf="@id/iv_play_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:gravity="center|left">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_song_name"
+            android:text="Awakening"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_author"
+            android:text="Silent Partner"
+            android:textColor="@color/purple_700"
+            android:textStyle="italic"
+            android:paddingLeft="12dp"
+            android:paddingRight="8dp"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+
+<!--    <View-->
+<!--        android:layout_marginRight="32dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="1dp"-->
+<!--        android:background="@color/siliver"/>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
